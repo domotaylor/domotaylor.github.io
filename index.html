@@ -1,182 +1,368 @@
 <!DOCTYPE html>
-<!-- saved from url=(0136)file:///C:/Users/123do/OneDrive/Documents/GitHub/HTML-and-CSS-Course-GitHub-repository/Final%20Project/final_portfolioProject.html#About -->
-<html><!--Head--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
+  <div id="home">
+    <!----------------Navigation Start----------------->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/domotaylor">GitHub</a>
+          </li>
+         
+        </ul>
         
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <meta name="HandheldFriendly" content="true">
-        <title>Dominique Taylor</title>
-        <link rel="stylesheet" type="text/css" href="./CSS/portfolio.css">
-    </head>
-
-    <!--Body-->
-    <body class="Background">
-        
-        <!--Navbar-->
-        <div class="Navbar">
-            <a class="active" href="#Home">Home</a>
-            <a href="#Slideshow">Slideshow</a>
-            <a href="#About">About</a>
-            <a href="#GitHub">GitHub</a>
-            <a href="https://dribbble.com/DomsWorld">Dribble</a>
-            <a href="https://www.linkedin.com/in/dominiquethedesigner/">Linkedin</a>
-            <a href="https://docs.google.com/document/d/1SjDCun97Xjw6i-s7_4FIRthrSoUfN-PVtIU1ynNpO5E/edit?usp=sharing">Resume</a>
-            
-           
-
-            <!-- onclick and onblclick added to contact function -->
-            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
-        </div>
-
-        <!--Breaks inserted to add space between navbar and the first heading-->
-        <br>
-        <br>
-
-        <!--Background video-->
-        <div id="Home">
-            <video autoplay="" muted="" loop="" id="Typing_Video">
-                <source src="./images/videos/coding.mp4" type="video/mp4">
-                <!--Display message if video fails to run-->
-                Your browser does not support HTML5 video.
-            </video>
-        </div>
-
-        <!--Video text-->
-        <div class="Video_Text">
-            <h1 class="white-text">Dominique Taylor's<s></s> Portfolio</h1>
-            <strong>
-                <p class="center">
-                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
-                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
-                        <br>field of battle and to command such unswervingly dutiful actors or troops.
-                    </q>
-                    <br> -Joseph Weizenbaum
-                    <br>
-                    <br> My name is Dominique Taylor and Welcome to my portfolio website. On it, I will tell you about my background and experience.
-                    <br>
-                    <br> Thank you for stopping by and enjoy! 
-                </p>
-            </strong>
-        </div>
-
-<!-- Slideshow section added -->
-<div id="Slideshow">
-    <div id="Slideshow_Background"> 
-        <div id="Slideshow_Container">
-            <!-- Slide 1 of 6 -->
-            <div class="mySlides fade">
-                <img class="Slideshow_Images" src="./images/About_me.JPG" alt="Picture of yourself">
-                <div class="text">I'm available to assist you on any coding or design projects!</div>
-            </div>
-            <!-- Slide 2 of 6 -->
-            <div class="mySlides fade">
-                <img class="Slideshow_Images" src="./images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
-                <div class="text">I am a front end developer,<br> trained in:<br>HTML, CSS, and JavaScript</div>
-            </div>
-            <!-- Slide 3 of 6 -->
-            <div class="mySlides fade">
-                <img class="Slideshow_Images" src="./images/Python.png" alt="Python logo">
-                <div class="text">I know my way around the popular programming language Python</div>
-            </div>
-            <!-- Slide 4 of 6 -->
-            <div class="mySlides fade">
-                <img class="Slideshow_Images" src="./images/UX.jpg" alt="UX design">
-                <div class="text">While I love coding, my specialty is in UX/UI design! </div>
-            </div>
-            <!-- Slide 5 of 6 -->
-            <div class="mySlides fade">
-                <img class="Slideshow_Images" src="./images/North-Carolina-AT-State.jpg" alt="A&T"> 
-                <div class="text">Graduated from North Carolina A&T in communication and journalism </div>
-            </div>
-            <!-- Slide 6 of 6 -->
-            <div class="mySlides fade">
-                <img class="Slideshow_Images" src="./images/contact.jpg" alt="contact me"> 
-                <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a></div> 
-            </div>
-            <!-- Previous and next buttons -->
-            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br> <!-- Adds a space between the slideshow images and the dots -->
-
-        <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
-        <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span> 
-            <span class="dot" onclick="currentSlide(4)"></span> 
-            <span class="dot" onclick="currentSlide(5)"></span> 
-            <span class="dot" onclick="currentSlide(6)"></span> 
-        </div>
+      </div>
+    </nav>
+    <!----------------Navigation End----------------->
+    <!----------------Background Start----------------->
+    <div class="background">
+      <img src="animatedAmerica1.jpg"  width="1300" class="img-fluid">
     </div>
-</div>
+    <div class="heading-content text-center">
+      <h5>Hello, I'm</h5>
+      <h1>Dominique Taylor</h1>
+      <p>AND THIS IS MY DIGITAL WORLD...LET'S CONNECT!</p>
+    </div>
+
+    <!----------------Background End----------------->
+  </div>
 
 
+  <!----------------About Start----------------->
+  <div id="about" class="offset container mt-3 mb-5">
+    <div class="post-heading text-center">
+      <h3 class="display-4 font-weight-bold">About Me</h3>
+      <hr class="w-50 mx-auto pb-5">
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-12 pb-4">
+        <img src="portfolio.jpg" class="img-fluid">
+      </div>
 
-        <!--About section-->
-        <div class="Row" id="About">
-            <!--Left column-->
-            <div class="Column_2">
-                <img src="./images/suitMe.JPG" alt="Replace with your own image and description">
-            </div>
-            <!--Right column-->
-            <div class="Column_1">
-                <h1>About</h1>
-                <p>
-                    I am a software developer and UX/UI desginer who loves to code and design! As a recent college graduate, my experience in life is limited, but my will to learn new skills will never end.
-                    <br>
-                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
-                    <br>
-                    <br>I am a junior developer and designer and would love to work with you on your projects in your company. <a href="file:///C:/Users/123do/OneDrive/Documents/GitHub/HTML-and-CSS-Course-GitHub-repository/Final%20Project/final_portfolioProject.html#Contact">Contact</a> me below!
-                </p>
-            </div>
-        </div>
+      <div class="col-lg-6 col-md-6 col-12">
+        <h2>Wanna Know Me?</h2>
+        <hr>
+        <p>I'm a young, fast-learning, hard-working anime enthusiast that loves going into the design world and taking nothing and turning it to something. Most importantly I'm someone that loves to learn and I ultimately feel like that will help me achieve my dream of working in the tech industry as a designer and front-end developer. I am driven to be the best at what I do and want to be a part of a team that will give me the opportunities to learn more as I develop my skills and work on projects that pushes me to a higher level.</p>
 
-        <!--GitHub section-->
-        <div class="Row" id="GitHub">
-            <!--Left column-->
-            <div class="Column_1">
-                <h1>GitHub</h1>
-                <p>
-                    You can view my coding projects on my GitHub profile here:
-                    <br>
-                    </p><p class="center"><a href="https://github.com/domotaylor" target="_blank">The Tech Academy Github</a></p>
-                <p></p>
-            </div>
-            <!--Right column-->
-            <div class="Column_2">
-                <a href="https://github.com/domotaylor" target="_blank"><img src="./Dominique Taylor_files/GitHub.png" alt="GitHub Logo"></a>
-            </div>
-        </div>
-
-        <!--Contact form -->
-        <div id="Contact">
-            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
-            <div class="form-popup" id="myForm">
-                 <form action="https://formspree.io/f/mwkavwng" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
-                     <h1>Contact</h1>
-                     <label for="name"><b>Name</b></label>
-                       <input type="text" placeholder="Type your name here" name="name" required>
-                     <label for="phone"><b>Phone</b></label>
-                       <input type="text" placeholder="Type your phone number here" name="phone">
-                     <label for="email"><b>Email</b></label>		
-                       <input type="text" placeholder="Type your email address here" name="email" required>
-                     <label for="message"><b>Message</b></label>
-                       <input type="text" placeholder="Type your message here" name="message">
+          <p>Tools: Adobe creative cloud, Adobe XD, Adobe Photoshop, Figma, Invision, Visual studio code, google drawing, sketch, and more. </p>
           
-                     <button type="submit" class="btn">SUBMIT</button>
-                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-                 </form>
-            </div>
-         </div>
+          <p>Skills: User Experience Research, Interviewing, Wireframing, Sketching, Prototyping, User Interface Design, Interaction Design, Usability Testing, HTML, CSS, JavaScript, Python, Responsive Design, Visual Design</p>
 
-        <!--Footer section-->
-        <footer>
-            <p>
-                </p><p class="center">© Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
-                <br>
-                <script src="./JS/portfolio.js"></script>
-            <p></p>
-        </footer>
-    
-</body></html>
+        <button class="btn w-50">
+          <a href="https://www.linkedin.com/in/dominiquethedesigner/">Know More</a>
+        </button>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <!----------------About End----------------->
+
+
+
+   <!----------------Service Start----------------->
+  <div id="service" class="offset container mt-3 mb-5">
+    <div class="post-heading text-center">
+      <h3 class="display-4 font-weight-bold">Service :)</h3>
+      <hr class="w-50 mx-auto pb-5">
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-12 pb-5">
+        <div class="card">
+        <img src="CanyonHikers.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Client Website (Canyon Hikers)</h5>
+          <p class="card-text">A client wanted a website to be created. Did the wireframing, mockups, and the coding.</p>
+          <a href="https://github.com/domotaylor/UX-UI/commit/32f9894fc9e3a45b94517a465311fcee203f1d30" class="btn btn-dark">Live Preview</a>
+        </div>
+      </div>
+      </div>
+
+            <div class="col-lg-4 col-md-6 col-12 pb-5">
+        <div class="card">
+        <img src="SpaceStation.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Travel Website</h5>
+          <p class="card-text">I created this travel website for a project in my HTML course. focusing on design and structure of website.</p>
+          <a href="https://github.com/domotaylor/HTML-and-CSS-Course-GitHub-repository/blob/main/ProjectFolder/spaceindex.html" class="btn btn-dark">Live Preview</a>
+        </div>
+      </div>
+      </div>
+
+            <div class="col-lg-4 col-md-6 col-12 pb-5">
+        <div class="card">
+        <img src="Tictactoe.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Game Project</h5>
+          <p class="card-text">Thought it would be awesome to design a actual working game from code. This Tic Tac Toe game is 1st player vs CPU and I had fun developing it.</p>
+          <a href="https://github.com/domotaylor/JavaScript-Projects./blob/main/TicTacToe/TicTacToe.html" class="btn btn-dark">Live Preview</a>
+        </div>
+      </div>
+      </div>
+
+            <div class="col-lg-4 col-md-6 col-12 pb-5">
+        <div class="card">
+        <img src="Calcu.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tool Project</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://github.com/domotaylor/JavaScript-Projects./blob/main/TicTacToe%20-%20Copy/Calculator.html" class="btn btn-dark">Live Preview</a>
+        </div>
+      </div>
+      </div>
+
+            <div class="col-lg-4 col-md-6 col-12 pb-5">
+        <div class="card">
+        <img src="New podcast.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Podcast Cover</h5>
+          <p class="card-text">My client started a podcast and wanted me to design his cover. I animated one of his pictures and edit the style in Figma</p>
+          <a href="https://open.spotify.com/show/1OgcOIM1rAHZfoHYpjNk78" class="btn btn-dark">Live Preview</a>
+        </div>
+      </div>
+      </div>
+
+            <div class="col-lg-4 col-md-6 col-12 pb-5">
+        <div class="card">
+        <img src="Theatre Vertigo casestudy.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Client Case Study</h5>
+          <p class="card-text">For my internship I was the UI designer for a company called Prosper IT Consulting. Their client was a theatre comany named Theatre Vertigo </p>
+          <a href="https://github.com/domotaylor/UX-UI/blob/main/TheatreVertigoCaseStudy.psd" class="btn btn-dark">Live Preview</a>
+        </div>
+      </div>
+      </div>
+
+      <button class="button w-50 mx-auto mb-5">
+          <a href="https://github.com/domotaylor">Know More</a>
+      </button>
+
+    </div>
+
+  </div>
+
+  <!----------------Service End----------------->
+
+         <!----------------Dribble Start----------------->
+        <section class="sec1 container-fluid mt-5 pb-5">
+          <h2 class="mt-5">Dribble</h2>
+          <p>Check out my Dribble Account.</p>
+          <img src="Dribble.png" class="img-fluid">
+          <form class="form-inline mt-2" action="https://dribbble.com/DomsWorld">
+              <button type="submit" class="btn btn-dark ml-2">check it out</button>
+          </form>
+
+        </section>
+
+
+
+        <!----------------Contact Start----------------->
+  <div id="contact" class=" offset w-50 mx-auto mt-5 mb-5">
+    <div class="post-heading text-center">
+      <h3 class="display-4 font-weight-bold">Contact Me</h3>
+      <hr class="w-50 mx-auto pb-5">
+    </div>
+    <form action="https://formspree.io/f/mwkavwng" method="POST" class="form-container">
+      <div class="form-group">
+        <label for="email">Full Name:</label>
+        <input type="text" class="form-control" id="email" placeholder="Type your name here" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email" placeholder="Type your email address here" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Your Message:</label>
+        <textarea class="form-control" placeholder="Type your message here" name="message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark">Sent</button>
+    </form>
+
+
+  </div>
+
+  <!----------------Contact End----------------->
+
+  <!----------------Footer Start----------------->
+        <!-- Footer -->
+        <div class="">
+      <footer class="page-footer font-small blue-grey lighten-5">
+
+        <div style="background-color: blue;">
+          <div class="container">
+
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                <h6 class="mb-0 text-light font-weight-bold">connected with me on social networks!</h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-7 text-center text-md-right ">
+
+                <!-- Facebook -->
+                <a class="fb-ic">
+                  <i class="fab fa-facebook-f text-light mr-4"> </i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic">
+                  <i class="fab fa-linkedin-in text-light mr-4"> </i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic">
+                  <i class="fab fa-instagram text-light" href="https://www.instagram.com/domsworld18/"></i>
+                </a>
+
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+          </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+          <!-- Grid row -->
+          <div class="row mt-3 dark-grey-text">
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+              <!-- Content -->
+              <h6 class="text-uppercase font-weight-bold">Dom's Digital World</h6>
+              <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                consectetur
+                adipisicing elit.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Products</h6>
+              <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <a class="dark-grey-text" href="https://www.figma.com/blog/">Figma</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="https://www.adobe.com/creativecloud.html">Adobe</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="https://visualstudio.microsoft.com/">Visual Studio</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="https://getbootstrap.com/">Bootstrap</a>
+              </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+              <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <a class="dark-grey-text" href="https://dribbble.com/DomsWorld">Dribble Account</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="https://docs.google.com/document/d/1SjDCun97Xjw6i-s7_4FIRthrSoUfN-PVtIU1ynNpO5E/edit?usp=sharing">Resume</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="https://www.linkedin.com/in/dominiquethedesigner/">Linkedin</a>
+              </p>
+              <a class="dark-grey-text" href="https://www.instagram.com/domsworld18/">Instagram</a>
+            </p>
+            <a class="dark-grey-text" href="https://www.facebook.com/dominique.taylor.73997861">Facebook</a>
+          </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Contact</h6>
+              <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <i class="fas fa-home mr-3"></i> Fayetteville, NC 28304</p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i> 123dominique.taylor@gmail.com</p>
+              <p>
+                <i class="fas fa-phone mr-3"></i> + 336-314-6800</p>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center text-black-50 py-3">© 2021 Copyright:
+          <a class="dark-grey-text" href="https://mdbootstrap.com/">Dominique Taylor</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
+      </div>
+
+
+  <!----------------Footer End----------------->
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
