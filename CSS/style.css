@@ -59,10 +59,10 @@ body {
 }
 
 .heading-content p{
-  font-size: 3em;
+  font-size: 2em;
   text-transform: uppercase;
-  font-weight: bold;
-  color:black;
+  font-weight: bolder;
+  color: black;
   word-spacing: 5px ;
   letter-spacing: 2px;
 }
